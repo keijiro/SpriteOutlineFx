@@ -9,9 +9,11 @@ Usage
 -----
 
 *SpriteOutlineFx* draws contour lines of alpha channel values.
-And therefore the following points should be kept in mind.
+The following points should be kept in mind.
 
-- Clear the alpha channel using the camera’s clear color.
+- The alpha channel of the screen must be cleared by setting a zero
+  alpha color to the camera's clear color.
 - Use a color mask to draw sprites/objects without outlines.
+  See [the Sprites-NoAlpha shader][example] for a detailed usage example.
 
-See the example project for further details.
+[example]: https://github.com/keijiro/SpriteOutlineFx/blob/master/Assets/Test/Sprites-NoAlpha.shader
