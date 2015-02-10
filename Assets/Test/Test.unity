@@ -84,6 +84,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 779817776}
   - 212: {fileID: 779817775}
+  - 95: {fileID: 779817777}
   m_Layer: 0
   m_Name: MagnetSprite
   m_TagString: Untagged
@@ -125,6 +126,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!95 &779817777
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 779817774}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 81d8c7b5baee5497c99a9b611bca67d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1237858843
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +150,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1237858845}
   - 212: {fileID: 1237858844}
+  - 95: {fileID: 1237858846}
   m_Layer: 0
   m_Name: AsteroidSprite
   m_TagString: Untagged
@@ -175,6 +192,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!95 &1237858846
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237858843}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 81d8c7b5baee5497c99a9b611bca67d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1323326248
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +257,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: .416925192, g: .384407461, b: .661764741, a: 0}
+  m_BackGroundColor: {r: .402249128, g: .532355785, b: .683823526, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -271,8 +303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83badb83feaf48aa99c834703a0b7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineColor: {r: 1, g: .279411793, b: .279411793, a: 0}
-  sampleDistance: 3
+  outlineColor: {r: .977941155, g: .345155686, b: .345155686, a: 0}
+  sampleDistance: 2.5
   shader: {fileID: 4800000, guid: 832eb2012bb8d4b559dd13b098d55b1e, type: 3}
 --- !u!1 &2113378649
 GameObject:
@@ -283,6 +315,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2113378651}
   - 212: {fileID: 2113378650}
+  - 95: {fileID: 2113378652}
   m_Layer: 0
   m_Name: BirdEnemyFlapSprite
   m_TagString: Untagged
@@ -324,3 +357,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!95 &2113378652
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2113378649}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 81d8c7b5baee5497c99a9b611bca67d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
