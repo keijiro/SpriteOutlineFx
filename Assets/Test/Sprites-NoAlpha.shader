@@ -1,3 +1,5 @@
+// A variant of the sprite shader that doesn't write to the alpha channel.
+// The only difference from the standard sprite shader is setting ColorMask RGB at line 28.
 Shader "Sprites/No Alpha"
 {
 	Properties
@@ -23,7 +25,7 @@ Shader "Sprites/No Alpha"
 		ZWrite Off
 		Fog { Mode Off }
 		Blend One OneMinusSrcAlpha
-        ColorMask RGB
+		ColorMask RGB
 
 		Pass
 		{
