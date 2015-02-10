@@ -6,8 +6,19 @@ using System.Collections;
 [AddComponentMenu("Image Effects/2D Sprite/Outline")]
 public class SpriteOutlineFx : MonoBehaviour
 {
-    public Color outlineColor;
-    public float sampleDistance;
+    [SerializeField] Color _outlineColor = Color.red;
+
+    public Color outlineColor {
+        get { return _outlineColor; }
+        set { _outlineColor = value; }
+    }
+
+    [SerializeField] float _sampleDistance = 2;
+
+    public float sampleDistance {
+        get { return _sampleDistance; }
+        set { _sampleDistance = value; }
+    }
 
     [SerializeField] Shader shader;
 
@@ -22,27 +33,12 @@ public class SpriteOutlineFx : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        Setup();
-    }
-
-    void OnValidate()
-    {
-        Setup();
-    }
-
-    void Reset()
-    {
-        Setup();
-    }
-
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
         Setup();
 
-        _material.SetFloat("_Distance", sampleDistance);
-        _material.SetColor("_Color", outlineColor);
+        _material.SetFloat("_Distance", _sampleDistance);
+        _material.SetColor("_Color", _outlineColor);
 
         Graphics.Blit(source, destination, _material);
     }

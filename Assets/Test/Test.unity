@@ -303,8 +303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83badb83feaf48aa99c834703a0b7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineColor: {r: 1, g: .213235319, b: .213235319, a: 0}
-  sampleDistance: 3
+  _outlineColor: {r: 1, g: .338235319, b: .338235319, a: 1}
+  _sampleDistance: 3
   shader: {fileID: 4800000, guid: 832eb2012bb8d4b559dd13b098d55b1e, type: 3}
 --- !u!1 &2113378649
 GameObject:
